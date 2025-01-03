@@ -42,20 +42,7 @@ doExpensiveCalculation();
 return "Here you go!";
 ```
 
-For more information on getting started, you can refer to [our documentation](https://upstash.com/docs/oss/sdks/ts/ratelimit/gettingstarted).
-
-[Here's a complete nextjs example](https://github.com/upstash/ratelimit/tree/main/examples/nextjs)
-
-## Documentation
-
-See [the documentation](https://upstash.com/docs/redis/sdks/ratelimit-ts/overview) for more information details about this package.
-
 ## Contributing
-
-### Database
-
-Create a new redis database on [upstash](https://console.upstash.com/) and copy
-the url and token.
 
 ### Running tests
 
@@ -68,5 +55,5 @@ docker run -p 6379:6379 -it redis/redis-stack-server:latest
 Once you have a redis instance, simply run:
 
 ```sh
-pnpm test
+bun test
 ```
