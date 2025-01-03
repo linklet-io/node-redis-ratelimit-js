@@ -1,5 +1,7 @@
 # Node Redis Rate Limit
 
+[![Tests](https://github.com/linklet-io/node-redis-ratelimit-js/actions/workflows/tests.yaml/badge.svg)](https://github.com/linklet-io/node-redis-ratelimit-js/actions/workflows/tests.yaml)
+
 A fork of [@upstash/ratelimit](https://github.com/upstash/ratelimit) that uses Redis' `redis` package instead of Upstash's `@upstash/redis`. For Node.js/Bun/Deno serverful environments. Strips out Upstash specific features - analytics, deny list, etc.
 
 ## Quick Start
