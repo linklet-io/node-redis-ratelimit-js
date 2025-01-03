@@ -32,7 +32,7 @@ export type RegionRatelimitConfig = {
   /**
    * All keys in redis are prefixed with this.
    *
-   * @default `@linklet-io/node-redis-ratelimit-js`
+   * @default `@linklet-io/node-redis-ratelimit`
    */
   prefix?: string;
 

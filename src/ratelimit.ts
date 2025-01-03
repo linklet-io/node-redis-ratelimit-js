@@ -30,7 +30,7 @@ export type RatelimitConfig<TContext> = {
   /**
    * All keys in redis are prefixed with this.
    *
-   * @default `@linklet-io/node-redis-ratelimit-js`
+   * @default `@linklet-io/node-redis-ratelimit`
    */
   prefix?: string;
 
@@ -92,7 +92,7 @@ export abstract class Ratelimit<TContext extends Context> {
     this.ctx = config.ctx;
     this.limiter = config.limiter;
     this.timeout = config.timeout ?? 5000;
-    this.prefix = config.prefix ?? "@linklet-io/node-redis-ratelimit-js";
+    this.prefix = config.prefix ?? "@linklet-io/node-redis-ratelimit";
 
     this.primaryRedis = this.ctx.redis;
 
