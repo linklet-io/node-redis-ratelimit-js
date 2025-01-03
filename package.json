@@ -1,5 +1,5 @@
 {
-  "name": "@linklet-io/node-redis-ratelimit-js",
+  "name": "@linklet-io/node-redis-ratelimit",
   "version": "1.1.2",
   "type": "module",
   "main": "./dist/index.js",

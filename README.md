@@ -1,5 +1,6 @@
 # Node Redis Rate Limit
 
+[![npm (scoped)](https://img.shields.io/npm/v/@linklet-io/node-redis-ratelimit)](https://www.npmjs.com/package/@linklet-io/node-redis-ratelimit)
 [![Tests](https://github.com/linklet-io/node-redis-ratelimit-js/actions/workflows/tests.yaml/badge.svg)](https://github.com/linklet-io/node-redis-ratelimit-js/actions/workflows/tests.yaml)
 
 A fork of [@upstash/ratelimit](https://github.com/upstash/ratelimit) that uses Redis' `redis` package instead of Upstash's `@upstash/redis`. For Node.js/Bun/Deno serverful environments. Strips out Upstash specific features - analytics, deny list, etc.
@@ -27,9 +28,9 @@ const ratelimit = new Ratelimit({
   /**
    * Optional prefix for the keys used in redis. This is useful if you want to share a redis
    * instance with other applications and want to avoid key collisions. The default prefix is
-   * "@linklet-io/node-redis-ratelimit-js"
+   * "@linklet-io/node-redis-ratelimit"
    */
-  prefix: "@linklet-io/node-redis-ratelimit-js",
+  prefix: "@linklet-io/node-redis-ratelimit",
 });
 
 // Use a constant string to limit all requests with a single ratelimit
